@@ -1,0 +1,60 @@
+.static-contact {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    margin: 0 0 30px 0;
+    p {
+        text-align: left;
+    }
+}
+.adresse, .mail {
+    margin: 10px 5px 15px 5px;
+    padding-left: 45px;
+    background-position: 0%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+.adresse {
+    background-image: url(pointer.svg);
+}
+.mail {
+    background-image: url(email.svg);
+}
+form {
+    border-top: 1px solid lighten($grey, 10%);
+    width: 70%;
+    margin: 0 auto 30px auto;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+    display: block;
+    height: 30px;
+    width: calc(100% - 10px);
+    margin: 13px auto;
+    padding: 5px;
+    border: 1px solid $grey;
+    font-family: 'Open Sans', sans-serif;
+    @include font-size(14px);
+    color: $grey;
+}
+textarea {
+    height: 200px;
+}
+input[type="submit"] {
+    float: right;
+    display: inline-block;
+    border: 1px solid $accent;
+    color: $accent;
+    background: $base;
+    height: 55px;
+    width: 45%;
+    @include font-size(16px);
+    background-image: url(paper-plane.svg);
+    background-position: 95% 50%;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    cursor: pointer;
+}

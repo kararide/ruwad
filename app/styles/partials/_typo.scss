@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+}
+h2, h3, h4 {
+    color: $dark-accent;
+    text-align: center;
+}
+p, span {
+    font-family: 'Open Sans', sans-serif;
+    @include font-size(14px);
+    padding: 3px;
+    margin: 0;
+}
+ul a li {
+    @include font-size(18px);
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    @include font-size(36px);
+}
+h2 {
+    @include font-size(32px);
+}
+h3 {
+    @include font-size(26px);
+}
+h4 {
+    @include font-size(22px);
+}
