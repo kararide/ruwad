@@ -11,12 +11,13 @@
     display: inline-block;
     width: 300px;
     padding: 10px 40px;
+    vertical-align: top;
 }
 .content .content-section h3 {
     padding: 5px;
     margin: 0;
 }
 svg {
-    height: 100px;
+    height: auto;
     width: auto;
 }
