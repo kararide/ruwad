@@ -1,7 +1,12 @@
-var $ = require('jquery');
+window.$ = window.jQuery = require('jquery');
+var typed = require('typed.js');
 
 $(document).ready(function() {
-    $('#app').text('Hello from JQuery.');
-    console.log('Tasty Brunch, just trying to use jQuery!');
+    $("#typed-text").typed({
+        strings: ["założyć firmę w Dubaju?", "znaleźć kontrahenta zainteresowanego Twoimi produktami?"],
+        typeSpeed: 50,
+        startDelay: 10,
+        loop: true
+    });
 });
 

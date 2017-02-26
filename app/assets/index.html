@@ -5,7 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-  <title>Brunch with ES6</title>
+  <title>Ruwad</title>
   <link rel="stylesheet" type="text/css" href="/app.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
@@ -20,22 +20,22 @@
 
             <div class="menu-section">
                 <ul>
-                    <a href=""><li>O nas</li></a>
-                    <a href=""><li>Kontakt</li></a>
+                    <a href="#offer"><li>O nas</li></a>
+                    <a href="#contact"><li>Kontakt</li></a>
                     <a href=""><li>język</li></a>
                 </ul>
             </div>
 
             <h1 class="header-text">
-                Czy chciałbyś <strong>założyć firmę w Dubaju</strong>?|
+                Czy chciałbyś <strong id="typed-text">...</strong>
             </h1>
         </header>
 
         <div class="content">
-            <h2 class="centent-title">Oferta</h2>
+            <a name="offer"><h2 class="centent-title">Oferta</h2></a>
 
             <div class="content-section">
-                <svg width="129px" height="54px" viewBox="68 0 129 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="fix-height" width="129px" height="54px" viewBox="68 0 129 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
                     <desc>Created with Sketch.</desc>
                     <defs>
@@ -165,7 +165,7 @@
             </div>
 
 
-            <h2 class="centent-title">Kontakt</h2>
+            <a name="contact"><h2 class="centent-title">Kontakt</h2></a>
 
             <div class="static-contact">
                 <h4>Biuro w Warszawie</h4>
@@ -178,7 +178,7 @@
                     <p>kontakt@ruwad.pl</p>
                     <p>contact_poland@ruwad.co</p>
                 </div>
-                
+
             </div>
             <div class="static-contact">
                 <h4>Biuro w Dubaju</h4>
@@ -195,12 +195,12 @@
 
             <form method="POST" action="" role="form">
                 <h2 class="centent-title">Elektroniczny formularz kontaktowy</h2>
-                
+
                 <input id="surname" name="surname" placeholder="Imię i nazwisko" type="text" value="">
                 <input id="company" name="company" placeholder="Nazwa firmy" type="text" value="">
                 <input id="phone" name="phone" placeholder="Telefon kontaktowy" type="text" value="">
                 <input id="reference_email" name="reference_email" placeholder="Email kontaktowy" type="text" value="">
-                
+
                 <textarea id="context" name="context" placeholder="Treść wiadomości" rows="4"></textarea>
 
                 <input class="button" type="submit" value="Wyślij">
@@ -216,7 +216,6 @@
     <script src="/app.js"></script>
     <script>
         require('scripts/initialize');
-        require('scripts/logger');
     </script>
 </body>
 </html>
