@@ -49,7 +49,7 @@ input[type="submit"] {
     color: $accent;
     background: $base;
     height: 55px;
-    width: 45%;
+    width: 48%;
     min-width: 200px;
     @include font-size(16px);
     background-image: url(paper-plane.svg);
@@ -59,10 +59,19 @@ input[type="submit"] {
     margin-bottom: 30px;
     cursor: pointer;
 }
+span.capcha {
+    border: 1px dashed $accent;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 48%;
+    height: 55px;
+    display: inline-block;
+}
 @media screen and (max-width: 600px) {
-    input[type="submit"] {
+    span.capcha, input[type="submit"] {
         width: 90%;
-        margin: 0 auto;
+        margin: 3px auto;
         float: none;
     }
 }
