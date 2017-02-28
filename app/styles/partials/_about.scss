@@ -1,7 +1,8 @@
 .about-person {
     display: block;
-    width: 100%;
-    height: 200px;
+    width: calc(100% - 20px);
+    min-height: 200px;
+    margin: 10px;
 }
 .about-person h4 {
     float: left;
