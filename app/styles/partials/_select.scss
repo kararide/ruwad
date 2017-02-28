@@ -1,0 +1,10 @@
+select {
+    background: transparent;
+    border: none;
+    color: $base;
+}
+option {
+    display: inline-block;
+    background: $accent;
+    border: none;
+}
