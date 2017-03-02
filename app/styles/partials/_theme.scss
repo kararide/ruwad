@@ -3,7 +3,7 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 480px 0 0 0;
+    padding: 0;
     transition: padding-top 0.4s ease;
 }
 .container {
@@ -11,15 +11,4 @@ body {
     margin: 0;
     width: 100%;
     height: auto;
-}
-body.sticky-header {
-	padding-top: 140px;
-}
-body.sticky-header header {
-    height: 110px;
-    background-color: $accent;
-    background-image: none;
-}
-body.sticky-header header h1.header-text {
-    display: none;
 }
