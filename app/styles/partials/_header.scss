@@ -6,31 +6,57 @@ header {
     padding: 0;
     background-image: url(dubai_1.jpg);
     background-position: 50% 30%;
+    transition: all 0.4s ease;
+}
+header.sticky {
+    position: fixed;
+    top: 0;
+    height: 55px;
+    background-color: $accent;
+    background-image: none;
+    h1.header-text {
+        display: none;
+    }
+    .logo-section {
+        padding: 8px 16px;
+    }
+    .logo-section a img {
+        width: 100px;
+        height: auto;
+    }
+    .menu-section {
+        padding: 0;
+    }
+    .menu-section ul {
+        padding: 0px;
+    }
+    .menu-section ul li {
+        padding: 0px;
+    }
 }
 header::before {
   content: "";
   background-color: $accent;
   opacity: 0.5;
-
 }
 header .logo-section {
     float: left;
-    padding: 25px;
+    padding: 16px;
     a img {
-        width: 200px;
+        width: 180px;
         height: 71px;
     }
 }
 header .menu-section {
     float: right;
-    padding-right: 15px;
+    padding-right: 16px;
     ul {
         list-style-type: none;
-        padding-top: 10px;
+        padding-top: 16px;
     }
     ul li {
         display: inline-block;
-        padding: 5px 15px;
+        padding: 8px 24px;
         color: $base;
     }
 }
