@@ -13,7 +13,8 @@ p, span {
     padding: 3px;
     margin: 0;
 }
-ul a li {
+ul a li,
+.flags a {
     @include font-size(18px);
     font-family: 'Raleway', sans-serif;
 }
