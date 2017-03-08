@@ -25,3 +25,8 @@ svg.fix-height {
     margin-top: 25px;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 375px) {
+    .content .content-section {
+        width: 230px;
+    }
+}

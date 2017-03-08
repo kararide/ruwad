@@ -59,3 +59,17 @@ h1.header-text {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+@media screen and (max-width: 375px) {
+    header .menu-section {
+        padding-right: 0;
+        padding-left: 0;
+        ul {
+            padding-top: 8px;
+            padding-left: 0;
+        }
+        ul li {
+            display: block;
+            padding: 8px 16px;
+        }
+    }
+}
